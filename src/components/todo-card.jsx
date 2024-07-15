@@ -25,15 +25,15 @@ const TodoCard = ({ note, add, date, del, check }) => {
           </div>
           <div className="flex flex-row-reverse gap-2">
             <div className={`hover:bg-red-700 p-2`} onClick={del}>
-              <img src="/src/assets/delete.svg" alt="" width={30} />
+              <img src="/assets/delete.svg" alt="" width={30} />
             </div>
             {complete === "" ? (
               <div className={`bg-green-400 p-2`} onClick={handleComplete}>
-                <img src="/src/assets/check.svg" alt="" width={30} />
+                <img src="/assets/check.svg" alt="" width={30} />
               </div>
             ) : (
               <div className={`bg-yellow-600 p-2`} onClick={handleComplete}>
-                <img src="/src/assets/close-close.svg" alt="" width={30} />
+                <img src="/assets/close-close.svg" alt="" width={30} />
               </div>
             )}
           </div>
